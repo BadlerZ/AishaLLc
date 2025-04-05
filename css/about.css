@@ -1,0 +1,216 @@
+/* Basic styling for the navbar */
+/*div {
+    border:5px black solid;
+}*/
+p,a,h1,h3,h2{
+    font-family:"MS Gothic";
+    font-weight:bold;
+}
+html, body {
+    height: auto;
+    margin: 0;
+    background-color: #FAF9F6
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 5%;
+    filter: drop-shadow(5px 5px 5px);
+}
+
+.logo-row {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between the logo image and the text link */
+}
+
+.logo-row img {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 10px;
+}
+
+.logo-row a {
+    font-size: 1.5em;
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 35px;
+}
+
+.images-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    border-radius: 35px;
+    padding: 10px;
+}
+
+.images-row img {
+    width: 40px; /* Adjust size as needed */
+    height: auto;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.images-row img:hover {
+    transform: scale(1.1);
+}
+
+.nav-row {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between navigation links */
+}
+
+.nav-row a {
+    font-size: 1.5em;
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.nav-row a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+.container img {
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: 5 auto; /* Center the image */
+    margin-top:5%;
+    margin-bottom:5%;
+}
+
+/* Styling for the main content */
+.container {
+    width: 80%;
+    top:5%;
+    text-align: left;
+    margin-top: 20px;
+    margin-left:10%;
+    color: black;
+    z-index: 999;
+    font-size: 2.5em;
+    line-height: 1.6;
+    font-size:la;
+}
+.container h1 {
+    font-size: 1.2em;
+    line-height: 1.2;
+    margin:0;
+}
+
+.container h2 {
+    font-size: 2em;
+}
+
+.image-text-wrapper {
+    display: flex; /* Align the image and text horizontally */
+    align-items: center; /* Vertically align the text with the image */
+    justify-content: flex-start; /* Align items to the left */
+    gap:5px; /* Add some space between the image and the text */
+    margin-top: 20px; /* Add spacing above the wrapper */
+}
+
+.image-text-wrapper img {
+    width: 70%; /* Adjust the image size */
+    height: auto;
+    display: block;
+}
+
+.sideways-text {
+    writing-mode: vertical-rl; /* Rotate the text to be vertical */
+    font-size: 1.5em; /* Adjust the font size */
+    color: black; /* Set the text color */
+    text-align: center; /* Center-align the text */
+}
+
+.image-text-wrapper.right-aligned {
+    display: flex; /* Align the image and text horizontally */
+    align-items: center; /* Vertically align the text with the image */
+    justify-content: flex-start; /* Align items to the left */
+    gap:5px; /* Add some space between the image and the text */
+    margin-top: 20px; /* Add spacing above the wrapper */
+}
+
+.image-text-wrapper.right-aligned img {
+    width: 70%; /* Adjust the image size */
+    height: auto;
+    display: block;
+}
+
+.image-text-wrapper.right-aligned .sideways-text {
+    writing-mode: vertical-rl; /* Rotate the text to be vertical */
+    font-size: 1.3em; /* Adjust the font size */
+    color: black; /* Set the text color */
+    text-align: center; /* Center-align the text */
+    width: 25%;
+}
+
+.image-text-wrapper.center-aligned {
+    display: flex; /* Align the image and text horizontally */
+    align-items: center; /* Vertically align the text with the image */
+    justify-content: flex-start; /* Align items to the left */
+    gap:5px; /* Add some space between the image and the text */
+    margin-top: 20px; /* Add spacing above the wrapper */
+}
+
+.image-text-wrapper.center-aligned img {
+    width: 70%; /* Adjust the image size */
+    height: auto;
+    display: block;
+}
+
+.image-text-wrapper.center-aligned .sideways-text {
+    writing-mode: vertical-rl; /* Rotate the text to be vertical */
+    transform: rotate(180deg);
+    font-size: 1.3em; /* Adjust the font size */
+    color: black; /* Set the text color */
+    text-align: center; /* Center-align the text */
+}
+.image-text-wrapper.center-aligned .sideways-text2 {
+    writing-mode: vertical-rl; /* Rotate the text to be vertical */
+    font-size: 1.3em; /* Adjust the font size */
+    color: black; /* Set the text color */
+    text-align: center; /* Center-align the text */
+}
+
+.center {
+    text-align: center;
+}
+
+/* Footer styling */
+footer {
+    position: relative;
+    margin-top:5%;
+    height: 5%;
+    width: 10%;
+}
+
+p.copyright {
+    font-weight:normal;
+    position: absolute;
+    width: 100%;
+    color: black;
+    line-height: 40px;
+    font-size: 1.5em;
+    text-align: center;
+    bottom:0;
+    left: 50px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 35px;
+    padding: 5px;
+    filter: drop-shadow(5px 5px 5px);
+}

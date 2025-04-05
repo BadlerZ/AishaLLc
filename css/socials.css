@@ -1,0 +1,175 @@
+/* Basic styling for the navbar */
+/*div {
+    border:5px black solid;
+}*/
+p,a,h1,h3,h2{
+    font-family:"MS Gothic";
+    font-weight:bold;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: #FAF9F6;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 5%;
+    filter: drop-shadow(5px 5px 5px);
+}
+
+.logo-row {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between the logo image and the text link */
+}
+
+.logo-row img {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 10px;
+}
+
+.logo-row a {
+    font-size: 1.5em;
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 35px;
+}
+
+.images-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    border-radius: 35px;
+    padding: 10px;
+}
+
+.images-row img {
+    width: 40px; /* Adjust size as needed */
+    height: auto;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.images-row img:hover {
+    transform: scale(1.1);
+}
+
+.nav-row {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between navigation links */
+}
+
+.nav-row a {
+    font-size: 1.5em;
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 35px;
+}
+.nav-row a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.socials-row {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the images horizontally */
+    align-items: center; /* Center the images vertically */
+    gap: 10px; /* Add spacing between the images */
+    margin-top: 20px; /* Add some spacing above the row */
+}
+.socials-row a {
+    display: inline-flex; /* Ensure the <a> tag behaves like a container for the image */
+    align-items: center; /* Center the image vertically within the <a> tag */
+    justify-content: center; /* Center the image horizontally within the <a> tag */
+    text-decoration: none; /* Remove any default text styling */
+}
+.socials-row img {
+    width: 50%;
+    height:auto;
+    color:black;
+}
+.socials-row img {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.socials-row img:hover {
+    transform: scale(1.1); /* Slightly grow the icons */
+}
+
+.container img {
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: 5 auto; /* Center the image */
+    margin-top:5%;
+    margin-bottom:5%;
+}
+
+/* Styling for the main content */
+.container {
+    width: 80%;
+    top:5%;
+    text-align: left;
+    margin-top: 20px;
+    margin-left:10%;
+    color: black;
+    z-index: 999;
+    font-size: 2.5em;
+    line-height: 1.6;
+}
+.container h1 {
+    font-size: 1.4em;
+    line-height: 1.2;
+    margin:0;
+}
+
+.container h2 {
+    font-size: 2em;
+}
+
+.center {
+    text-align: center;
+}
+
+/* Footer styling */
+footer {
+    bottom:0;
+    position: absolute;
+    margin-top:5%;
+    height: 10%;
+    width: 15%;
+}
+
+p.copyright {
+    font-weight:normal;
+    position: absolute;
+    width: 100%;
+    color: black;
+    line-height: 40px;
+    font-size: 1.5em;
+    text-align: left;
+    bottom:0;
+    left:50px;
+}
+.background{
+    position:relative;
+    bottom:-2.5%;
+    
+}
+.background img{
+    width:100%;
+}

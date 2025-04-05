@@ -1,0 +1,150 @@
+/* Basic styling for the navbar */
+/*div {
+    border:5px black solid;
+}*/
+p,a,h1,h3{
+    font-family:"MS Gothic";
+    font-weight:bold;
+}
+html, body {
+    height: auto;
+    margin: 0;
+    background: linear-gradient(to bottom, black, black 80%, white 100%);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 5%;
+    filter: drop-shadow(3px 3px 5px #FFFFFF);
+}
+
+.logo-row {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between the logo image and the text link */
+}
+
+.logo-row img {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 10px;
+}
+
+.logo-row a {
+    font-size: 1.5em;
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 35px;
+}
+
+.images-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    border-radius: 35px;
+    padding: 10px;
+}
+
+.images-row img {
+    width: 40px; /* Adjust size as needed */
+    height: auto;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.images-row img:hover {
+    transform: scale(1.1);
+}
+
+.nav-row {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between navigation links */
+}
+
+.nav-row a {
+    font-size: 1.5em;
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 35px;
+}
+.nav-row a:hover {
+    background-color: #ddd;
+    color: black;
+}
+/* Styling for the main content */
+.container {
+    width: auto;
+    text-align: left;
+    margin-top: 20px;
+    margin-left:7%;
+    color: white;
+    z-index: 999;
+    
+}
+.container h1 {
+    font-size: 3em;
+    line-height: 2;
+    margin:0;
+    font-weight: 100;
+}
+
+.container p {
+    font-size: 2.5em;
+    line-height: 1.5;
+    margin: 0;
+    font-weight: 100;
+    width: 95%;
+    margin-bottom:10%;
+}
+
+.text-image-container {
+    display: flex; /* Enables flexbox layout */
+    align-items: center; /* Vertically aligns items */
+    gap: 15px; /* Adds space between the text and the image */
+}
+
+.text-image-container h1 {
+    flex: 1; /* Allows the text to take up available space */
+    margin: 0; /* Removes default margin */
+}
+
+.side-image {
+    width: 500px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 5%;
+}
+
+.separator {
+    display: block; /* Ensures the image behaves like a block element */
+    margin: 5% auto; /* Centers the image horizontally and adds vertical spacing */
+    width: 80%; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+/* Footer styling */
+footer {
+    height: 5%;
+    width: 15%;
+}
+
+p.copyright {
+    font-weight:normal;
+    width: 100%;
+    color: black;
+    line-height: 40px;
+    font-size: 1.5em;
+    text-align: center;
+}
