@@ -89,21 +89,27 @@ nav {
     align-items: center; /* Center the images vertically */
     gap: 10px; /* Add spacing between the images */
     margin-top: 20px; /* Add some spacing above the row */
+    padding-top: 5%;
+    
 }
 .socials-row a {
     display: inline-flex; /* Ensure the <a> tag behaves like a container for the image */
     align-items: center; /* Center the image vertically within the <a> tag */
     justify-content: center; /* Center the image horizontally within the <a> tag */
     text-decoration: none; /* Remove any default text styling */
+    
 }
 .socials-row img {
     width: 50%;
     height:auto;
     color:black;
+    
 }
 .socials-row img {
     transition: transform 0.3s ease;
     cursor: pointer;
+    filter: drop-shadow(5px 5px 5px);
+    
 }
 
 .socials-row img:hover {
@@ -130,6 +136,7 @@ nav {
     z-index: 999;
     font-size: 2.5em;
     line-height: 1.6;
+    filter: drop-shadow(2px 2px 2px);
 }
 .container h1 {
     font-size: 1.4em;
@@ -143,6 +150,7 @@ nav {
 
 .center {
     text-align: center;
+    padding-top: 5%;
 }
 
 /* Footer styling */
