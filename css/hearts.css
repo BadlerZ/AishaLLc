@@ -9,7 +9,7 @@ p,a,h1,h3,h2{
 html, body {
     height: auto;
     margin: 0;
-    background-color: white;
+    background-color: #FAF9F6;
 }
 nav {
     display: flex;
@@ -76,7 +76,7 @@ nav {
     text-decoration: none;
     background-color: white;
     padding: 5px 10px;
-    border-radius: 10px;
+    border-radius: 35px;
 }
 .nav-row a:hover {
     background-color: #ddd;
@@ -113,6 +113,9 @@ nav {
     max-width: 62%; /* Prevent it from exceeding the container's width */
     height: auto; /* Maintain the aspect ratio */
     display: block; /* Ensure proper alignment */
+    padding-left: 25%;
+    filter: drop-shadow(2px 2px 5px);
+
 }
 .title h3 {
     font-size: 2em;
@@ -122,9 +125,10 @@ nav {
 .icon {
     width: 10%; /* Adjust the size of the icon as needed */
     margin: 0;
-    padding: 0;
+    padding-right: 8%;
     display: block;
     margin-right:10%;
+    filter: drop-shadow(2px 2px 5px);
 }
 
 .container img {

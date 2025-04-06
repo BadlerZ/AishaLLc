@@ -5,6 +5,7 @@
 p,a,h1,h3{
     font-family:"MS Gothic";
     font-weight:bold;
+    filter: drop-shadow(5px 5px 5px #000000); /* Adds a shadow to text for better visibility */
 }
 html, body {
     height: auto;
@@ -129,8 +130,9 @@ nav {
 .separator {
     display: block; /* Ensures the image behaves like a block element */
     margin: 5% auto; /* Centers the image horizontally and adds vertical spacing */
-    width: 80%; /* Adjust the width as needed */
+    width: 50%; /* Adjust the width as needed */
     height: auto; /* Maintain aspect ratio */
+    filter: drop-shadow(3px 3px 5px #FFFFFF);
 }
 
 

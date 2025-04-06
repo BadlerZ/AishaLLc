@@ -5,6 +5,7 @@
 p,a,h1{
     font-family:"MS Gothic";
     font-weight:bold;
+    filter: drop-shadow(5px 5px 5px #000000)
 }
 html, body {
     height: auto;
@@ -100,6 +101,7 @@ nav {
     line-height: 2;
     margin:0;
     font-weight: 100;
+    padding-top: 5%;
 }
 
 .container p {
@@ -116,6 +118,7 @@ nav {
     margin: 10% auto; /* Centers the image horizontally and adds vertical spacing */
     width: 70%; /* Adjust the width as needed */
     height: auto; /* Maintain aspect ratio */
+    filter: drop-shadow(3px 3px 5px #FFFFFF);
 }
 
 

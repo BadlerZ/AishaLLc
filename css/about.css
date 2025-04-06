@@ -85,7 +85,6 @@ nav {
 
 
 .container img {
-    width: 70%;
     height: auto;
     display: block;
     margin: 5 auto; /* Center the image */
@@ -110,10 +109,12 @@ nav {
     font-size: 1.2em;
     line-height: 1.2;
     margin:0;
+    filter: drop-shadow(2px 2px 2px);
 }
 
 .container h2 {
     font-size: 2em;
+    filter: drop-shadow(2px 2px 2px);
 }
 
 .image-text-wrapper {
@@ -122,19 +123,22 @@ nav {
     justify-content: flex-start; /* Align items to the left */
     gap:5px; /* Add some space between the image and the text */
     margin-top: 20px; /* Add spacing above the wrapper */
+    
 }
 
 .image-text-wrapper img {
-    width: 70%; /* Adjust the image size */
+    width: 35%; /* Adjust the image size */
     height: auto;
     display: block;
+    filter: drop-shadow(3px 3px 3px); 
 }
 
 .sideways-text {
     writing-mode: vertical-rl; /* Rotate the text to be vertical */
-    font-size: 1.5em; /* Adjust the font size */
+    font-size: 1em; /* Adjust the font size */
     color: black; /* Set the text color */
     text-align: center; /* Center-align the text */
+    filter: drop-shadow(2px 2px 2px);
 }
 
 .image-text-wrapper.right-aligned {
@@ -146,14 +150,14 @@ nav {
 }
 
 .image-text-wrapper.right-aligned img {
-    width: 70%; /* Adjust the image size */
+    width: 35%; /* Adjust the image size */
     height: auto;
     display: block;
 }
 
 .image-text-wrapper.right-aligned .sideways-text {
     writing-mode: vertical-rl; /* Rotate the text to be vertical */
-    font-size: 1.3em; /* Adjust the font size */
+    font-size: 1em; /* Adjust the font size */
     color: black; /* Set the text color */
     text-align: center; /* Center-align the text */
     width: 25%;
@@ -212,5 +216,12 @@ p.copyright {
     background-color: rgb(240, 240, 240);
     border-radius: 35px;
     padding: 5px;
+    filter: drop-shadow(5px 5px 5px);
+}
+.line {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
     filter: drop-shadow(5px 5px 5px);
 }
