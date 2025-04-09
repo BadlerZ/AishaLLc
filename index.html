@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AISHA LLC</title>
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500&display=swap" rel="stylesheet" />
     
     <link href="css/index.css" rel="stylesheet" type="text/css" />
+
     <style>
-        /* Base Font Settings */
         body {
             margin: 0;
             padding: 0;
@@ -23,47 +23,13 @@
             font-family: 'Playfair Display', serif;
         }
 
-        /* Haiku styling */
-        .haiku-container {
-            text-align: center;
-            margin-top: 80px;
-            cursor: pointer;
-        }
-
-        #japanese-haiku h1 {
-            margin: 0.3em 0;
-            font-size: 2.2em;
-            font-weight: 500;
-        }
-
-        #english-haiku {
-            display: none;
-            white-space: nowrap;
-            gap: 2em;
-            justify-content: center;
-            text-align: center;
-            font-size: 1.4em;
-            flex-wrap: nowrap;
-        }
-
-        #english-haiku a {
-            text-decoration: none;
-            color: #333;
-            margin: 0 15px;
-            transition: color 0.3s ease;
-            font-weight: 500;
-        }
-
-        #english-haiku a:hover {
-            color: #a52a2a;
-        }
-
-        /* Navigation styling */
         nav {
             display: flex;
             flex-direction: column;
             align-items: center;
             padding: 20px 0;
+            z-index: 2;
+            position: relative;
         }
 
         .logo-row {
@@ -78,7 +44,7 @@
         }
 
         .logo-row a {
-            font-size: 1.8em;
+            font-size: 2em;
             text-decoration: none;
             color: #222;
             font-weight: 600;
@@ -104,7 +70,7 @@
         .nav-row a {
             text-decoration: none;
             color: #444;
-            font-size: 1.1em;
+            font-size: 1.2em;
             padding: 6px 12px;
             border-radius: 6px;
             transition: all 0.3s ease;
@@ -115,24 +81,60 @@
             color: #000;
         }
 
-        .background img {
+        .background {
             position: fixed;
             top: 0;
             left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .background img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            z-index: -1;
-            opacity: 0.1;
+            opacity: 0.2;
+        }
+
+        .haiku-container {
+            text-align: center;
+            margin-top: 80px;
+            cursor: pointer;
+            position: relative;
+            z-index: 2;
+        }
+
+        #japanese-haiku h1,
+        #english-haiku h1 {
+            margin: 0.4em 0;
+            font-size: 2.6em;
+            font-weight: 500;
+        }
+
+        #english-haiku {
+            display: none;
+        }
+
+        #english-haiku h1 a {
+            text-decoration: none;
+            color: #333;
+            transition: color 0.3s ease;
+        }
+
+        #english-haiku h1 a:hover {
+            color: #a52a2a;
         }
 
         footer {
-            margin-top: 80px;
+            margin-top: 100px;
             text-align: center;
             padding: 20px 0;
-            font-size: 0.9em;
+            font-size: 1em;
             color: #888;
-            font-family: 'Inter', sans-serif;
+            z-index: 2;
+            position: relative;
         }
     </style>
 </head>
@@ -163,9 +165,9 @@
             <h1>夢作れ</h1>
         </div>
         <div id="english-haiku">
-            <a href="about.html">Steel with a real soul</a>
-            <a href="socials.html">Surpass what was possible</a>
-            <a href="contact.html">Don’t dream it, build it</a>
+            <h1><a href="about.html">Steel with a real soul</a></h1>
+            <h1><a href="socials.html">Surpass what was possible</a></h1>
+            <h1><a href="contact.html">Don’t dream it, build it</a></h1>
         </div>
     </div>
 
@@ -175,12 +177,12 @@
 
     <footer>
         <p class="copyright">&copy; 2025 AISHA LLC</p>
-    </footer> 
+    </footer>
 
     <script>
         function showEnglish() {
             document.getElementById("japanese-haiku").style.display = "none";
-            document.getElementById("english-haiku").style.display = "flex";
+            document.getElementById("english-haiku").style.display = "block";
         }
 
         function showJapanese() {
