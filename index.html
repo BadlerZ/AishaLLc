@@ -1,176 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AISHA LLC</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AISHA LLC</title>
 
-    <!-- Artistic Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+  <!-- Artistic Handwritten Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&family=Shadows+Into+Light&display=swap" rel="stylesheet">
 
-    <style>
-        /* Base Styles */
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Playfair Display', serif;
-            color: #222;
-            background: url('image/background.png') no-repeat center center fixed;
-            background-size: cover;
-        }
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Shadows Into Light', cursive;
+      color: #222;
+      background: url('image/background.png') no-repeat center center fixed;
+      background-size: cover;
+    }
 
-        /* Navigation Styles */
-        nav {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 20px 0;
-            z-index: 2;
-            position: relative;
-        }
+    nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 0;
+      z-index: 2;
+      position: relative;
+    }
 
-        .logo-row {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            margin-bottom: 15px;
-        }
+    .logo-row {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 15px;
+    }
 
-        .logo {
-            height: 60px;
-        }
+    .logo {
+      height: 60px;
+    }
 
-        .logo-row a {
-            font-size: 2em;
-            text-decoration: none;
-            color: #222;
-            font-weight: 600;
-        }
+    .logo-row a {
+      font-size: 2em;
+      text-decoration: none;
+      color: #222;
+      font-weight: 600;
+    }
 
-        .images-row {
-            display: flex;
-            gap: 20px;
-            margin: 10px 0;
-        }
+    .images-row {
+      display: flex;
+      gap: 20px;
+      margin: 10px 0;
+    }
 
-        .images-row img {
-            height: 30px;
-            opacity: 0.7;
-        }
+    .images-row img {
+      height: 30px;
+      opacity: 0.7;
+    }
 
-        .nav-row {
-            display: flex;
-            gap: 30px;
-            margin-top: 15px;
-        }
+    .nav-row {
+      display: flex;
+      gap: 30px;
+      margin-top: 15px;
+    }
 
-        .nav-row a {
-            text-decoration: none;
-            color: #444;
-            font-size: 1.2em;
-            padding: 6px 12px;
-            border-radius: 6px;
-            transition: all 0.3s ease;
-        }
+    .nav-row a {
+      text-decoration: none;
+      color: #444;
+      font-size: 1.2em;
+      padding: 6px 12px;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+    }
 
-        .nav-row a:hover {
-            background-color: #f0f0f0;
-            color: #000;
-        }
+    .nav-row a:hover {
+      background-color: #f0f0f0;
+      color: #000;
+    }
 
-        /* Haiku Section */
-        .haiku-container {
-            text-align: center;
-            margin-top: 80px;
-            cursor: pointer;
-            position: relative;
-            z-index: 2;
-        }
+    .haiku-container {
+      text-align: center;
+      margin-top: 80px;
+      cursor: pointer;
+      position: relative;
+      z-index: 2;
+    }
 
-        #japanese-haiku h1,
-        #english-haiku h1 {
-            margin: 0.4em 0;
-            font-size: 2.6em;
-            font-weight: 500;
-        }
+    #japanese-haiku h1,
+    #english-haiku h1 {
+      margin: 0.4em 0;
+      font-size: 2.8em;
+      font-weight: 500;
+      text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+    }
 
-        #japanese-haiku {
-            font-family: 'Sawarabi Mincho', serif;
-        }
+    #japanese-haiku {
+      font-family: 'Kiwi Maru', serif;
+    }
 
-        #english-haiku {
-            display: none;
-        }
+    #english-haiku {
+      display: none;
+      font-family: 'Shadows Into Light', cursive;
+    }
 
-        #english-haiku h1 a {
-            text-decoration: none;
-            color: #333;
-            transition: color 0.3s ease;
-        }
+    #english-haiku h1 a {
+      text-decoration: none;
+      color: #333;
+      transition: color 0.3s ease;
+    }
 
-        #english-haiku h1 a:hover {
-            color: #a52a2a;
-        }
+    #english-haiku h1 a:hover {
+      color: #a52a2a;
+    }
 
-        /* Footer */
-        footer {
-            margin-top: 100px;
-            text-align: center;
-            padding: 20px 0;
-            font-size: 1em;
-            color: #888;
-            z-index: 2;
-            position: relative;
-        }
-    </style>
+    footer {
+      margin-top: 100px;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 1em;
+      color: #888;
+      z-index: 2;
+      position: relative;
+    }
+  </style>
 </head>
 <body>
-    <nav>
-        <div class="logo-row">
-            <img class="logo" src="image/AiShaLogo.png" alt="AiShaLogo">
-            <a href="index.html">AISHA LLC</a>
-        </div>
-        <script src="js/cards.js"></script>
-        <div class="images-row">
-            <img src="image/spades.svg" alt="Spades">
-            <img src="image/hearts.svg" alt="Hearts">
-            <img src="image/clubs.svg" alt="Clubs">
-            <img src="image/diamonds.svg" alt="Diamonds">
-        </div>
-        <div class="nav-row">
-            <a href="about.html">ABOUT</a>
-            <a href="socials.html">SOCIALS</a>
-            <a href="contact.html">CONTACT</a>
-        </div>
-    </nav>
-
-    <div class="haiku-container" onmouseover="showEnglish()" onmouseout="showJapanese()">
-        <div id="japanese-haiku">
-            <h1>生き鋼</h1>
-            <h1>不可能超えて</h1>
-            <h1>夢作れ</h1>
-        </div>
-        <div id="english-haiku">
-            <h1><a href="about.html">Steel with a real soul</a></h1>
-            <h1><a href="socials.html">Surpass what was possible</a></h1>
-            <h1><a href="contact.html">Don’t dream it, build it</a></h1>
-        </div>
+  <nav>
+    <div class="logo-row">
+      <img class="logo" src="image/AiShaLogo.png" alt="AiSha Logo">
+      <a href="index.html">AISHA LLC</a>
     </div>
+    <script src="js/cards.js"></script>
+    <div class="images-row">
+      <img src="image/spades.svg" alt="Spades">
+      <img src="image/hearts.svg" alt="Hearts">
+      <img src="image/clubs.svg" alt="Clubs">
+      <img src="image/diamonds.svg" alt="Diamonds">
+    </div>
+    <div class="nav-row">
+      <a href="about.html">ABOUT</a>
+      <a href="socials.html">SOCIALS</a>
+      <a href="contact.html">CONTACT</a>
+    </div>
+  </nav>
 
-    <footer>
-        <p class="copyright">&copy; 2025 AISHA LLC</p>
-    </footer>
+  <div class="haiku-container" onmouseover="showEnglish()" onmouseout="showJapanese()">
+    <div id="japanese-haiku">
+      <h1>生き鋼</h1>
+      <h1>不可能超えて</h1>
+      <h1>夢作れ</h1>
+    </div>
+    <div id="english-haiku">
+      <h1><a href="about.html">Steel with a real soul</a></h1>
+      <h1><a href="socials.html">Surpass what was possible</a></h1>
+      <h1><a href="contact.html">Don’t dream it, build it</a></h1>
+    </div>
+  </div>
 
-    <script>
-        function showEnglish() {
-            document.getElementById("japanese-haiku").style.display = "none";
-            document.getElementById("english-haiku").style.display = "block";
-        }
+  <footer>
+    <p class="copyright">&copy; 2025 AISHA LLC</p>
+  </footer>
 
-        function showJapanese() {
-            document.getElementById("english-haiku").style.display = "none";
-            document.getElementById("japanese-haiku").style.display = "block";
-        }
-    </script>
+  <script>
+    function showEnglish() {
+      document.getElementById("japanese-haiku").style.display = "none";
+      document.getElementById("english-haiku").style.display = "block";
+    }
+
+    function showJapanese() {
+      document.getElementById("english-haiku").style.display = "none";
+      document.getElementById("japanese-haiku").style.display = "block";
+    }
+  </script>
 </body>
 </html>
