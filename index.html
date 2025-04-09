@@ -16,6 +16,8 @@
       color: #222;
       background: url('image/background.png') no-repeat center center fixed;
       background-size: cover;
+      min-height: 100vh;
+      position: relative;
     }
 
     nav {
@@ -30,13 +32,13 @@
     .logo-row {
       display: flex;
       align-items: center;
-      gap: 0px; /* No gap at all */
+      gap: 8px; /* slightly closer spacing between logos */
       margin-bottom: 15px;
-      line-height: 0; /* Kill any stray line height artifacts */
+      line-height: 0;
     }
 
     .logo {
-      height: 72px; /* ~20% larger than 60px */
+      height: 84px; /* 40% larger than original 60px */
       display: block;
       vertical-align: middle;
     }
@@ -115,13 +117,20 @@
     }
 
     footer {
-      margin-top: 100px;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
       text-align: center;
       padding: 20px 0;
       font-size: 1em;
       color: #888;
       z-index: 2;
-      position: relative;
+    }
+
+    @media (min-height: 700px) {
+      footer {
+        position: fixed;
+      }
     }
   </style>
 </head>
