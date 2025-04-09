@@ -30,16 +30,21 @@
     .logo-row {
       display: flex;
       align-items: center;
-      gap: 15px;
+      gap: 0px; /* No gap at all */
       margin-bottom: 15px;
+      line-height: 0; /* Kill any stray line height artifacts */
     }
 
-    .logo, .handwritten-logo {
-      height: 60px;
+    .logo {
+      height: 72px; /* ~20% larger than 60px */
       display: block;
+      vertical-align: middle;
     }
 
     .handwritten-logo {
+      height: 60px;
+      display: block;
+      vertical-align: middle;
       margin-top: 5px;
     }
 
