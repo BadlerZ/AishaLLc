@@ -3,8 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/index.css" rel="stylesheet" type="text/css" />
     <title>AISHA LLC</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    
+    <link href="css/index.css" rel="stylesheet" type="text/css" />
+    <style>
+        /* Base Font Settings */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            color: #222;
+            background-color: #fff;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Haiku styling */
+        .haiku-container {
+            text-align: center;
+            margin-top: 80px;
+            cursor: pointer;
+        }
+
+        #japanese-haiku h1 {
+            margin: 0.3em 0;
+            font-size: 2.2em;
+            font-weight: 500;
+        }
+
+        #english-haiku {
+            display: none;
+            white-space: nowrap;
+            gap: 2em;
+            justify-content: center;
+            text-align: center;
+            font-size: 1.4em;
+            flex-wrap: nowrap;
+        }
+
+        #english-haiku a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+            font-weight: 500;
+        }
+
+        #english-haiku a:hover {
+            color: #a52a2a;
+        }
+
+        /* Navigation styling */
+        nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo-row {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .logo {
+            height: 60px;
+        }
+
+        .logo-row a {
+            font-size: 1.8em;
+            text-decoration: none;
+            color: #222;
+            font-weight: 600;
+        }
+
+        .images-row {
+            display: flex;
+            gap: 20px;
+            margin: 10px 0;
+        }
+
+        .images-row img {
+            height: 30px;
+            opacity: 0.7;
+        }
+
+        .nav-row {
+            display: flex;
+            gap: 30px;
+            margin-top: 15px;
+        }
+
+        .nav-row a {
+            text-decoration: none;
+            color: #444;
+            font-size: 1.1em;
+            padding: 6px 12px;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-row a:hover {
+            background-color: #f0f0f0;
+            color: #000;
+        }
+
+        .background img {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            opacity: 0.1;
+        }
+
+        footer {
+            margin-top: 80px;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9em;
+            color: #888;
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -14,10 +144,10 @@
         </div>
         <script src="js/cards.js"></script>
         <div class="images-row">
-            <img src="image/spades.svg">
-            <img src="image/hearts.svg">
-            <img src="image/clubs.svg">
-            <img src="image/diamonds.svg">
+            <img src="image/spades.svg" alt="Spades">
+            <img src="image/hearts.svg" alt="Hearts">
+            <img src="image/clubs.svg" alt="Clubs">
+            <img src="image/diamonds.svg" alt="Diamonds">
         </div>
         <div class="nav-row">
             <a href="about.html">ABOUT</a>
@@ -26,23 +156,37 @@
         </div>
     </nav>
 
-    <div class="container">
-        <h1 class="line1">生き鋼</h1>
-        <h1 class="line2">不可能超えて</h1>
-        <h1 class="line3">夢作れ</h1>
+    <div class="haiku-container" onmouseover="showEnglish()" onmouseout="showJapanese()">
+        <div id="japanese-haiku">
+            <h1>生き鋼</h1>
+            <h1>不可能超えて</h1>
+            <h1>夢作れ</h1>
+        </div>
+        <div id="english-haiku">
+            <a href="about.html">Steel with a real soul</a>
+            <a href="socials.html">Surpass what was possible</a>
+            <a href="contact.html">Don’t dream it, build it</a>
+        </div>
     </div>
-    <script src="js/index.js"></script>
+
     <div class="background">
-        <img src="image/background.png">
+        <img src="image/background.png" alt="Background">
     </div>
+
     <footer>
         <p class="copyright">&copy; 2025 AISHA LLC</p>
     </footer> 
-     
-</body>
-  
-</html>
-<body>
-  <h1>AiSha LLC Under Construction</h1>
+
+    <script>
+        function showEnglish() {
+            document.getElementById("japanese-haiku").style.display = "none";
+            document.getElementById("english-haiku").style.display = "flex";
+        }
+
+        function showJapanese() {
+            document.getElementById("english-haiku").style.display = "none";
+            document.getElementById("japanese-haiku").style.display = "block";
+        }
+    </script>
 </body>
 </html>
